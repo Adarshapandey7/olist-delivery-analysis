@@ -130,4 +130,17 @@ ALTER TABLE olist.final_data
 RENAME COLUMN product_category_name_english TO product_category_name;
 */
 
+-- SELECT * FROM olist.final_data;
+
+-- Dropping more irrelevant columns from the combined dataset, to make the final dataset more simpler
+
+/*
+ALTER TABLE olist.final_data
+DROP COLUMN customer_city,
+DROP COLUMN customer_zip_code_prefix,
+DROP COLUMN seller_city,
+DROP COLUMN seller_zip_code_prefix;
+*/
+
+
 SELECT * FROM olist.final_data;
