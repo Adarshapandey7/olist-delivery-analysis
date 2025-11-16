@@ -1,33 +1,29 @@
 -- I will begin next step in data cleaning by combining tables, and over time identify the columns that are irrelavant
 
-
 -- 1. Joining tables order_items and orders
 /*
 CREATE TABLE olist.orders_items_join AS
 SELECT
-    -- Select the unique join key once
     o.order_id,
-    
-    -- Select all columns from the orders table (excluding the second order_id)
-    o.customer_id, 
-    o.order_status, 
+    o.customer_id,
+    o.order_status,
     o.order_purchase_timestamp,
-    -- ... other columns from olist.orders
-    
-    -- Select all columns from the order_items table
-    oi.order_item_id, 
-    oi.product_id, 
+    o.order_approved_at,
+    o.order_delivered_carrier_date,
+    o.order_delivered_customer_date,
+    o.order_estimated_delivery_date,
+
+    oi.order_item_id,
+    oi.product_id,
     oi.seller_id,
-    oi.shipping_limit_date, 
-    oi.price, 
-    oi.freight_value 
-    -- ... other columns from olist.order_items
+    oi.shipping_limit_date,
+    oi.price,
+    oi.freight_value
 
 FROM olist.orders AS o
 JOIN olist.order_items AS oi
     ON o.order_id = oi.order_id;
-*/    
-
+*/
 
 -- 2. Joining customers table to above created table
 /*
