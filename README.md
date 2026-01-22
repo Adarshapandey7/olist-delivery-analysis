@@ -71,12 +71,11 @@ These issues result in **delivery delays**, **customer dissatisfaction**, and re
 Tableau Dashboard: [Insert your Tableau Public link here]
 
 ## Repository Contents
-├──SQL_Cleaning_and_Analysis.ipynb # PostgreSQL data preparation and SQL analysis
-├── Olist_Cleaned_Dataset.csv # Cleaned dataset used for analysis
-├── Excel_Analytics.xlsx # Descriptive and predictive analysis
-├── Tableau_Visualizations.twbx # Tableau workbook
-└── README.md # Project documentation
-
+SQL_Cleaning_and_Analysis.ipynb # PostgreSQL data preparation and SQL analysis
+Olist_Cleaned_Dataset.csv # Cleaned dataset used for analysis
+Excel_Analytics.xlsx # Descriptive and predictive analysis
+Tableau_Visualizations.twbx # Tableau workbook
+README.md # Project documentation
 
 ## Skills & Tools Demonstrated
 - **Data Cleaning & Preparation:** PostgreSQL, SQL, Excel  
